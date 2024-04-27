@@ -12,10 +12,39 @@ fetch(
   options
 )
   .then((response) => response.json())
-  .then((response) => console.log(response))
+  .then((response) => {
+    console.log(response)
+    response.results.forEach(element => {
+      
+    
+     let  movie= {
+      poster : element.backdrop_path,
+      title : element.title,
+      view : element.overview,
+      average : element.vote_average
+    }
+   
+    let card = `<div id = "card" >
+                <img src="https://image.tmdb.org/t/p/w200/${movie.poster}" alt="">
+                <p id = "title">${movie.title} </p>
+                <p id = "view">${movie.view}</p>
+                <p>rating :  ${movie.average}</p>
+                </div>`
+    const movielist = document.querySelector('.movie')
+    console.log(card)
+    movielist.innerHTML += card;
+    
+    
+  });
+  }
+)
+
+
+//사진 제목 내용 평점
+
+  
   .catch((err) => console.error(err));
+
   
-// const movielist = document.querySelector('.movie')
-response.forEach(a => {
-  
-});
+
+

@@ -1,41 +1,55 @@
+
 .title {
     border-radius: 10px;
     font-size: 50px;
     text-align: center;
-    border: solid 1px red;
+    
     padding: 20px;
     margin-bottom: 0px;
 }
 .label {
     text-align: center;
     border-radius: 10px;
-    border: solid 1px orange;
+    
     font-size: 20px;
     padding: 20px;
 }
 .movie{
     border-radius: 10px;
-    border: solid 1px green;
+    
     /* display: flex;
     flex-direction: row;
     flex-wrap: wrap; */
 
 }
 section {
-    border-radius: 10px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    column-gap: 10px;
-    row-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr ;
+    overflow: hidden; /* 추가 */
 }
-div {
+#title{
+    font-weight: bolder;
+}
+#card {    
+    
+    width: 400px;
+    margin: 30px auto;
+    border : solid 1px white;
+    border-radius: 10px;
     text-align: center;
-    margin: 20px;
-    border : solid 1px black;
+}
+
+div > img{
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    margin-top: 20px;
     border-radius: 10px;
 }
-div > img{
-    margin-top: 10px;
-    width: 50%;
-    height: 60%;
+#view{
+    width: 300px;
+    margin: 30px auto;
+}
+#search-input{
+    height: 20px;
 }

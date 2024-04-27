@@ -1,16 +1,26 @@
+@media (min-width: 600px) {
+    .card {
+      width: 45%;
+    }
+  }
+  
+  /* 화면의 너비가 900px 이상일 때 적용될 스타일 */
+  @media (min-width: 900px) {
+    .card {
+      width: 30%;
+    }
+  }
 #top{
     display: flex;
     align-items: center;
     align-content: center;
-    margin-left: 250px;
+    margin-left: 230px;
     margin-bottom: 60px;
-    margin-top: 70px;
-    
+    margin-top: 70px;    
 }
 
 #title-img{
-    width: 300px;
-    
+    width: 300px;    
     margin-top: 10px;
 }
 
@@ -49,7 +59,8 @@
 section {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr ;
-    overflow: hidden; /* 추가 */
+    overflow: hidden; 
+    /* 추가 */
     /* margin-top: 200px; */
 }
 
@@ -104,6 +115,3 @@ section {
     overflow: hidden;
     
 }
-/* #search-input{
-    height: 20px;
-} */

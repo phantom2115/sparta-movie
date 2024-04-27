@@ -43,7 +43,7 @@ fetch(
   .catch(err => console.error(err));
 
   function search(movieId) {
-    alert('id: ' + movieId); 
+    alert('Movie ID : ' + movieId); 
   }
 
   window.onload = function() {

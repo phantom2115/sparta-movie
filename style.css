@@ -7,6 +7,7 @@
     margin-top: 70px;
     
 }
+
 #title-img{
     width: 300px;
     
@@ -24,6 +25,10 @@
     padding-left: 10px;
 }
 
+#text-search:focus{
+    outline-color: green;
+}
+
 
 #text-btn{
     margin-top: 20px;
@@ -36,22 +41,30 @@
     background-color: transparent;
 }
 
+#text-btn:hover{
+    border: solid 1.7px rgb(250, 250, 250);
+    background-color: rgb(164, 229, 164);
+}
+
 section {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr ;
     overflow: hidden; /* 추가 */
     /* margin-top: 200px; */
 }
+
 .movie{
     border-radius: 10px;
     
 
 }
+
 #title{
     margin-top: 18px;
     font-weight: bolder;
     font-size: 20px;
 }
+
 #card {    
     display: flex;
     width: 600px;
@@ -65,23 +78,27 @@ section {
     
 }
 
+#card:hover {
+    background-color: rgb(204, 244, 204);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
 
 #incard{
     margin-left: 30px;
     display: flex;
     flex-direction: column;
-    text-align: left;
-    
-    
+    text-align: left;   
 }
 
 #poster{
     width: 200px;
     height: 280px;
-    margin: 10px;
-    
+    margin: 10px;    
     border-radius: 10px;
 }
+
 #view{
     width: 300px;
     overflow: hidden;

@@ -1,55 +1,92 @@
-
-.title {
-    border-radius: 10px;
-    font-size: 50px;
-    text-align: center;
+#top{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    margin-left: 250px;
+    margin-bottom: 60px;
+    margin-top: 70px;
     
-    padding: 20px;
-    margin-bottom: 0px;
 }
-.label {
-    text-align: center;
-    border-radius: 10px;
+#title-img{
+    width: 300px;
     
+    margin-top: 10px;
+}
+
+#text-search{
+    margin-top: 20px;
+    width: 1000px;
+    height: 50px;
+    font-size: 30px;
+    margin-left: 20px;
+    border-radius: 15px;
+    border:solid green 1px;
+    padding-left: 10px;
+}
+
+
+#text-btn{
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 80px;
+    height: 50px;
     font-size: 20px;
-    padding: 20px;
-}
-.movie{
     border-radius: 10px;
-    
-    /* display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; */
-
+    border: solid 1.7px black;
+    background-color: transparent;
 }
+
 section {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr ;
     overflow: hidden; /* 추가 */
+    /* margin-top: 200px; */
+}
+.movie{
+    border-radius: 10px;
+    
+
 }
 #title{
+    margin-top: 18px;
     font-weight: bolder;
+    font-size: 20px;
 }
 #card {    
-    
-    width: 400px;
+    display: flex;
+    width: 600px;
+    height: 300px;
     margin: 30px auto;
-    border : solid 1px white;
+    border : solid 1px rgb(231, 255, 234);
     border-radius: 10px;
     text-align: center;
+    box-shadow: 0px 5px 10px 0px rgb(143, 143, 143);
+    background-color: rgb(247, 255, 247);
+    
 }
 
-div > img{
-    width: 300px;
-    height: 200px;
+
+#incard{
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    
+    
+}
+
+#poster{
+    width: 200px;
+    height: 280px;
     margin: 10px;
-    margin-top: 20px;
+    
     border-radius: 10px;
 }
 #view{
     width: 300px;
-    margin: 30px auto;
+    overflow: hidden;
+    
 }
-#search-input{
+/* #search-input{
     height: 20px;
-}
+} */

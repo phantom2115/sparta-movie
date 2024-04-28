@@ -47,6 +47,9 @@ fetch(
     alert('Movie ID : ' + movieId); 
   }
 
+
+
+  //검색 기능 GPT의 힘
   document.getElementById('text-search').addEventListener('input', function(e) {
     const searchText = e.target.value.toLowerCase();
     const cards = document.querySelectorAll('#card');

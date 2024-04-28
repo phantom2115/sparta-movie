@@ -47,7 +47,7 @@
 section {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr ;
-    overflow: hidden; 
+    
     /* 추가 */
     /* margin-top: 200px; */
 }
@@ -68,7 +68,7 @@ section {
     display: flex;
     width: 600px;
     height: 300px;
-    margin: 30px auto;
+    margin: 50px auto;
     border : solid 1px rgb(231, 255, 234);
     border-radius: 10px;
     text-align: center;
